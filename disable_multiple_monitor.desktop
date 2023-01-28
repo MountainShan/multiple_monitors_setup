@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Disable mulitple monitor
+GenericName=Disable multiple monitor
+Icon=display
+Exec=/opt/virtual-monitor/disable_multiple_monitor
+Terminal=true
+Type=Application
+Categories=Settings;HardwareSettings;
+StartupNotify=true

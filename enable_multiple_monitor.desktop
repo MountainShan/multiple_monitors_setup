@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Enable mulitple monitor
+GenericName=Enable multiple monitor
+Icon=display
+Exec=/opt/virtual-monitor/enable_multiple_monitor
+Terminal=false
+Type=Application
+Categories=Settings;HardwareSettings;
+StartupNotify=true

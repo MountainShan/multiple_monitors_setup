@@ -1,0 +1,4 @@
+#!/bin/bash
+# stop x11vnc 
+x11vnc -R stop
+xrandr -d :0  --output VIRTUAL1 --off

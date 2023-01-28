@@ -1,0 +1,9 @@
+#!/bin/bash
+xrandr -d :0 --newmode "1440x900_60.00"  106.47  1440 1520 1672 1904  900 901 904 932  -HSync +Vsync
+xrandr -d :0 --addmode VIRTUAL1 "1440x900_60.00"
+xrandr -d :0 --output VIRTUAL1 --right-of eDP1
+xrandr --output eDP1 --primary --mode 1366x768 --rotate normal --output VIRTUAL1 --mode 1440x900_60.00 --pos 0x0 --rotate right
+xrandr --output VIRTUAL1 --left-of eDP1
+
+#start x11vnc
+x11vnc -forever -usepw -display :0 -clip 900x1440+0+0 -multiptr
